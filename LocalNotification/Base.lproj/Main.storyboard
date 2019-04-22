@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faJ-Pr-TNG">
+                                <rect key="frame" x="20" y="127" width="374" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YFf-Ms-j1A">
+                                <rect key="frame" x="0.0" y="394" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="DSX-vz-Y3k"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="577648173.93679202">
+                                    <!--2019-04-22 17:49:33 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ja"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bd-VP-N0X">
+                                <rect key="frame" x="146" y="619" width="123" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="yAS-0D-tCy"/>
+                                </constraints>
+                                <state key="normal" title="登録"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9Q-Yi-eUc"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R2o-48-dUY">
+                                <rect key="frame" x="20" y="225" width="374" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4bd-VP-N0X" firstAttribute="top" secondItem="YFf-Ms-j1A" secondAttribute="bottom" constant="63" id="0EY-EP-6HQ"/>
+                            <constraint firstItem="YFf-Ms-j1A" firstAttribute="centerX" secondItem="4bd-VP-N0X" secondAttribute="centerX" id="3iX-sc-mVF"/>
+                            <constraint firstItem="faJ-Pr-TNG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="5Gl-on-cI7"/>
+                            <constraint firstAttribute="trailing" secondItem="YFf-Ms-j1A" secondAttribute="trailing" id="Hic-qX-rfR"/>
+                            <constraint firstItem="faJ-Pr-TNG" firstAttribute="leading" secondItem="R2o-48-dUY" secondAttribute="leading" id="I6D-gI-Tik"/>
+                            <constraint firstItem="YFf-Ms-j1A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pdp-SD-CVq"/>
+                            <constraint firstItem="R2o-48-dUY" firstAttribute="centerX" secondItem="YFf-Ms-j1A" secondAttribute="centerX" id="SrZ-5Y-rPw"/>
+                            <constraint firstItem="faJ-Pr-TNG" firstAttribute="trailing" secondItem="R2o-48-dUY" secondAttribute="trailing" id="X5I-E7-I0N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4bd-VP-N0X" secondAttribute="bottom" constant="177" id="aRf-K5-YSS"/>
+                            <constraint firstItem="faJ-Pr-TNG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dSj-gg-5nQ"/>
+                            <constraint firstItem="4bd-VP-N0X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="nXP-vm-VIJ"/>
+                            <constraint firstItem="R2o-48-dUY" firstAttribute="top" secondItem="faJ-Pr-TNG" secondAttribute="bottom" constant="68" id="pxF-PO-BCH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="YFf-Ms-j1A" id="fUO-gZ-qZ1"/>
+                        <outlet property="textField" destination="faJ-Pr-TNG" id="K5Z-VN-bKJ"/>
+                        <outlet property="textfield2" destination="R2o-48-dUY" id="U71-A7-Shw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>
